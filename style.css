@@ -1,0 +1,132 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #eeeeee;
+}
+
+#game {
+	display: flex;
+}
+
+table {
+	border-collapse: collapse;
+	margin: auto;
+}
+
+td {
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	border: 5px solid #fff;
+}
+
+#form {
+	display: flex;
+}
+
+form {
+	margin: auto;
+	margin-top: 200px;
+}
+
+input {
+	width: 300px;
+	height: 50px;
+	border: none;
+	border-radius: 15px;
+	opacity: 0.5;
+	outline: none;
+	font: 400 1em 'Open Sans', sans-serif;
+	padding-left: 20px;
+	margin-top: 20px;
+}
+
+#btn {
+	width: 170px;
+	height: 40px;
+	border-radius: 15px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font: 400 1em 'Open Sans', sans-serif;
+	background-color: #eeeeee;
+	color: red;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	margin: auto;
+	margin-top: 20px;
+}
+
+#btn::after, button::before {
+	position: absolute;
+	transition: top .5s;
+}
+
+#btn::after {
+	content: "OK";
+	top: 11px;
+	right: 40%;
+}
+
+#btn::before {
+	content: "START";
+	top: 60px;
+	right: 28%;
+}
+
+#btn:hover::after {
+	top: -40px;
+}
+
+#btn:hover::before {
+	top: 11px;
+}
+
+#content {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+#i1 {
+	width: 30px;
+	height: 20px;
+	border: none;
+	opacity: 0.5;
+	outline: none;
+	font: 400 1em 'Open Sans', sans-serif;
+	background-color: #eeeeee;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+#i2 {
+	width: 30px;
+	height: 20px;
+	border: none;
+	opacity: 0.5;
+	outline: none;
+	font: 400 1em 'Open Sans', sans-serif;
+	background-color: #eeeeee;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+#jsdemo1{
+	display: flex;
+}
+
+#jsdemo {
+	margin: auto;
+	color: red;
+	width: 300px;
+	font: 500 55px 'Josefin Sans';
+	text-align: center;
+}
